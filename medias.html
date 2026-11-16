@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le monde de Manowlyy ✦</title>
+  <link rel="icon" type="image/x-icon" href="../images/manowlyy_head.png">
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<div class="page">
+
+  <!-- ── Navigation ── -->
+  <nav class="glass site-nav" aria-label="Navigation principale">
+    <a href="index.html" class="nav-logo">✦ Le monde de Manowlyy ✦</a>
+    <ul class="nav-links">
+      <li><a href="index.html">✨ Accueil</a></li>
+      <li><a href="voyages.html">✈️ Voyages</a></li>
+      <li><a href="gym.html">🤸 Gymnastique</a></li>
+      <li><a href="dessins.html">✏️ Dessins</a></li>
+      <li><a href="pro.html">💼 Pro</a></li>
+    </ul>
+    <a href="../en/medias.html" style="margin-left:auto;">
+      <button type="button" class="card-badge" style="font-size:8px;padding:6px 12px;" >
+        <img src="../images/uk.png" width="16px" height="12px"/>
+      </button>
+    </a>
+  </nav>
+
+  <header class="glass page-header fade-in">
+    <div class="page-icon">⭐</div>
+    <h1 class="page-title">Médias</h1>
+    <p class="page-sub">Jeux-vidéos, musiques, films et séries : je donne mon avis !</p>
+    <div class="pixel-divider"></div>
+  </header>
+
+  <!-- Jeux vidéos -->
+  <section class="fade-in" aria-labelledby="music-label">
+    <h2 class="section-label">🎮 Jeux-vidéos</h2>
+    <div class="cards-grid">
+      <div class="glass card">
+        <span class="card-icon">👫</span>
+        <p class="card-title">It Takes Two</p>
+        <p class="card-meta">2026</p>
+        <div class="stars">★★★★★</div>
+        <p class="card-desc">J'ai été surprise qu'il y ait autant de niveaux. L'histoire est super !</p>
+      </div>
+      <div class="glass card">
+        <span class="card-icon">🔫</span>
+        <p class="card-title">Wolfenstein - The Old Blood</p>
+        <p class="card-meta">2026</p>
+        <div class="stars">★★★★☆</div>
+        <p class="card-desc">L'histoire est très intéressante. Cependant le jeu est peut-être un peu trop stressant pour moi :')</p>
+      </div>
+      <div class="glass card">
+        <span class="card-icon">❤️</span>
+        <p class="card-title">Undertale</p>
+        <p class="card-meta">2026</p>
+        <div class="stars">★★★★★</div>
+        <p class="card-desc">L'histoire est super, les musiques sont géniales, on s'attache aux personnages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Musique -->
+  <section class="fade-in" aria-labelledby="music-label">
+    <h2 class="section-label">🎵 Musique</h2>
+    <div class="cards-grid">
+      <div class="glass card">
+        <span class="card-icon">🌌</span>
+        <p class="card-title">Super Mario Galaxy 2 - World 6</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Films -->
+  <section class="fade-in" aria-labelledby="films-label">
+    <h2 class="section-label">🎥 Films</h2>
+    <div class="cards-grid">
+      <div class="glass card">
+        <span class="card-icon">🚀</span>
+        <p class="card-title">Interstellar</p>
+        <p class="card-meta">2019</p>
+        <div class="stars">★★★★★</div>
+        <p class="card-desc">La BO de Hans Zimmer à elle seule mérite le visionnage.</p>
+        <span class="badge">Mon film préféré</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Séries -->
+  <section class="fade-in" aria-labelledby="series-label">
+    <h2 class="section-label">📺 Séries</h2>
+    <div class="cards-grid">
+      <div class="glass card">
+        <span class="card-icon">☂️</span>
+        <p class="card-title">Umbrella Academy</p>
+        <p class="card-meta">2026</p>
+        <div class="stars">★★★★☆</div>
+        <p class="card-desc">Je regarde à nouveau. L'histoire est intéressante mais la saison 3 est moins fluide que les précédentes.</p>
+      </div>
+      <div class="glass card">
+        <span class="card-icon">🎪</span>
+        <p class="card-title">The Amazing Digital Circus</p>
+        <p class="card-meta">2026</p>
+        <div class="stars">★★★★★</div>
+        <p class="card-desc">J'adore ! On s'attache énormément aux personnages. Une fois regardée, cette série me manquait déjà.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p class="footer-copy">© 2026 Manowlyy</p>
+  </footer>
+
+</div>
+
+<script>
+  const obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }}), {threshold:0.1});
+  document.querySelectorAll('.fade-in').forEach((el,i) => { el.style.transitionDelay=(i*70)+'ms'; obs.observe(el); });
+</script>
+</body>
+</html>
